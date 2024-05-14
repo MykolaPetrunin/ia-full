@@ -1,4 +1,5 @@
 
 export default async function Home() {
-  return <div>Protected Page</div>;
+
+  return <div style={{height: '2000px'}}>Protected Page</div>;
 }
