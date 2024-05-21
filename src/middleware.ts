@@ -1,4 +1,4 @@
-import {auth} from "@/app/config/auth";
+import {auth} from "@/config/auth";
 
 export default auth;
 

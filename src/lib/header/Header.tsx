@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { usePathname } from 'next/navigation';
-import {titles} from "@/app/lib/header/config/titles";
+import {titles} from "./config/titles";
 
 export const Header: FC = () => {
   const pathname = usePathname();

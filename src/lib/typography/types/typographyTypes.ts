@@ -1,0 +1,1 @@
+export type TypographyTypes = 'success' | 'error' | 'warning' | 'info';

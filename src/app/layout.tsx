@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 import './globals.css';
-import { MainSideBar } from '@/app/lib/mainSideBar/MainSideBar';
-import { auth } from '@/app/config/auth';
-import { Button } from '@/app/lib/button/Button';
+import { auth } from '@/config/auth';
 import { signOut } from 'next-auth/react';
 import { ReactNode } from 'react';
-
-const roboto = Roboto({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500', '700'],
-});
+import { roboto } from '@/config/fonts';
+import { Button } from '@/lib/button/Button';
+import { MainSideBar } from '@/lib/mainSideBar/MainSideBar';
 
 export const metadata: Metadata = {
   title: 'Investment Advisor',
@@ -32,7 +27,7 @@ export default async function RootLayout({
         )}
         {session?.user && (
           <>
-            <MainSideBar user={session.user} onLogOut={signOut}/>
+            <MainSideBar user={session.user} onLogOut={signOut} />
             {children}
           </>
         )}

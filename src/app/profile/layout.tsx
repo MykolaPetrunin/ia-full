@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { Header } from '@/app/lib/header/Header';
-import { MenuItem } from '@/app/lib/menuItem/MenuItem';
+import {Header} from "@/lib/header/Header";
+import {MenuItem} from "@/lib/menuItem/MenuItem";
 
 export default async function ProfileLayout({
   children,
